@@ -1,0 +1,13 @@
+.iconAndPargraph
+{
+    @apply mt-8 flex items-start justify-start  w-[55%] ms-[40px];
+}
+.unactive_button
+{
+    @apply  border-2 border-gray-400 my-2  py-2 xs:px-4 xs:text-sm md:text-base  md:px-7  flex justify-center items-center text-gray-400 rounded-3xl cursor-pointer
+}
+.active_button
+{
+    @apply bg-icon py-2  xs:px-4  md:px-7 xs:text-sm  md:text-base border-2 my-2 border-icon  rounded-3xl text-white cursor-pointer 
+}
+/* Add this to your existing CSS file or style block */

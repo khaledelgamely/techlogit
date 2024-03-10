@@ -1,0 +1,17 @@
+.order-container {
+  background-image: url("../../assets/WhatsApp Image 2023-08-26 at 15.24.22.jpg");
+}
+@keyframes fadeOut {
+  from {
+    background-color: #7dbbeb;
+  }
+  to {
+    background-color: #ffffff; /* Change to the final color */
+  }
+}
+
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 5s; /* Adjust the time as needed */
+  animation-fill-mode: forwards; /* Keeps the element in the state of the last keyframe when the animation completes */
+}

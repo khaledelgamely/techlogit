@@ -1,0 +1,54 @@
+.servicePurchase {
+  background-image: url("../../assets/WhatsApp Image 2023-08-26 at 15.24.22.jpg");
+}
+
+.tabList {
+  position: relative;
+}
+
+.tabList::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: 10px;
+  width: 3px;
+  /* top: 1rem; */
+  background-color: #1b75bc;
+}
+
+
+@media (max-width: 867.5px) {
+  .tabList::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tabList::after {
+    right: 0;
+  }
+}
+
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.slider .slide-track {
+  display: inline-block;
+}
+
+.slider .slide {
+  display: inline-block;
+  margin-right: 10px;
+}
+.hidden-scrollbar {
+  -ms-overflow-style: none;  /* per Internet Explorer e Edge */
+  scrollbar-width: none;  /* per Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;  /* per Chrome, Safari e Opera */
+}

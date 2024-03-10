@@ -1,0 +1,104 @@
+.companies .span {
+    color: var(--mainColor);
+}
+
+.companies .order-lg-last img {
+    height: 80%;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: 0.3s ease-in all !important;
+}
+
+.companies .order-lg-last img:hover {
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+
+.companies .row .section .card {
+    position: relative;
+}
+
+.card-text {
+    font-family: "DM Sans",Sans-serif;
+    font-size: 300px;
+}
+/* .icons::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8%;
+    height: 80%;
+    width: 1px;
+    background-image: url("../../assets/companies/line.png");
+    z-index: -2;
+} */
+
+.companies .row .card {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+
+}
+
+.companies .row .card-title {
+    font-family: "DM Sans",Sans-serif !important;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 1%;
+    margin-bottom: 14px;
+}
+
+@media (max-width: 992px) {
+    .companies .row .card-title {
+        font-family: "DM Sans",Sans-serif;
+        font-size: 14px !important;
+        line-height: 12px !important;
+    }
+}
+
+.companies .row .img-container .icon {
+    margin-top: 15px;
+}
+
+.companies .row .card-text {
+    font-size: 14px;
+    font-family: "DM Sans",Sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 1%;
+    color: var(--greyColor);
+}
+
+@media (max-width: 992px) {
+    .companies .row .card-text {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+}
+
+/* @media (max-width: 767px) {
+    .companies .row {
+        flex-direction: column-reverse !important;
+    }
+} */
+
+@media (max-width: 992px) {
+    .companies {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .companies .img-container {
+        min-width: 73px;
+    }
+}
+.dmFont{
+    color: #000;
+    font-family: "DM Sans",Sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}

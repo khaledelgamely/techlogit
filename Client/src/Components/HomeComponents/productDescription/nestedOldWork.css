@@ -1,0 +1,118 @@
+.oldWorkContainer {
+    height: 500px;
+}
+
+.leftBtns button,
+.rightBtns button {
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid #1B75BC;
+    width: 53%;
+}
+
+@media (max-width: 768px) {
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 85%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 65%;
+        padding: 5px;
+    }
+
+    .oldMiddleDiv {
+        bottom: 70px;
+    }
+}
+@media (max-width: 920px) {
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 82%;
+        padding: 5px;
+    }
+
+    .oldMiddleDiv {
+        bottom: 70px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 86%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 682px) {
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 92%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 647px) {
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+.leftBtns,
+.rightBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.leftBtns {
+    align-items: flex-end;
+}
+
+.oldMiddleDiv img {
+    bottom: 0;
+}
+
+@media (max-width: 639px) {
+    .oldMiddleDiv {
+        height: 350px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .oldMiddleDiv img {
+        bottom: -100px;
+    }
+
+    .leftBtns button,
+    .rightBtns button {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .oldMiddleDiv {
+        bottom: 100px;
+    }
+}
+
+@media (max-width: 490px) {
+    .oldMiddleDiv {
+        bottom: 130px;
+    }
+}

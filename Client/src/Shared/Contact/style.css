@@ -1,0 +1,4 @@
+.iconAndPargraph
+{
+    @apply mt-8 flex items-start w-[50%] ms-[50px];
+}

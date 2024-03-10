@@ -1,0 +1,3 @@
+.link {
+    @apply transition-transform ease-in-out duration-500 hover:text-blue-500 hover:translate-x-3 hover:cursor-pointer text-[#BEBEBE] text-[16px] list-none;
+}

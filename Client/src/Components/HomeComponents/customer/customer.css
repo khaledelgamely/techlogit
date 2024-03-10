@@ -1,0 +1,32 @@
+@media (min-width: 640px) {
+    
+    .react-multiple-carousel__arrow--left {
+        left: calc(8% + -30px);
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: calc(8% + -30px);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .react-multiple-carousel__arrow--left {
+        left: calc(8% +-5px);
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: calc(8% +-5px);
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .react-multiple-carousel__arrow--left {
+        left: calc(8% + 0px);
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: calc(8% + 0px);
+    }
+}

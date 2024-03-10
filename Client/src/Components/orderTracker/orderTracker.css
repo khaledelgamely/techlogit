@@ -1,0 +1,102 @@
+.order-tracker{
+        background-image:url("../../assets/about/bg1.png"), url("../../assets/Rectangle 4563.png");
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;    
+}
+
+.stepper .step-bullet {
+    width: 30px;
+    height: 30px;
+    background-color: #1B75BC;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.stepper div {
+    position: relative;
+}
+.step-child{
+    width: 100%;
+
+}
+
+.active-step::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 30px);
+    height: 2px;
+    left: 30px;
+    top: 15px;
+    background-color: #1B75BC;
+    z-index: 1;
+}
+.vertical-step{
+    height: 85px;
+}
+.step-vert-child{
+    position: relative;
+}
+.step-vert-child:before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 66px;
+    left: 12px;
+    top: 20px;
+    background-color: #1B75BC;
+    z-index: 1;
+}
+.step-bullet svg{
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    z-index: 20;
+}
+.step-vert-bullet svg{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    background-color: #1B75BC;
+    border-radius: 50%;
+    line-height: 35px;
+}
+
+.step-4,
+.step-3::after {
+    opacity: 0.2;
+}
+
+.stepIconHolder svg{
+    width: 30px;
+    margin: 30px 0 10px 0;
+    font-size: 25px;
+    color: rgb(83, 83, 83);
+}
+.vert-step-info{
+    display: flex;
+    gap: 12px;
+}
+.vert-step-info svg{
+    font-size: 20px;
+}
+.stepper-title{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (max-width:890px) {
+    .stepperHolder{
+        width: 85%;
+    }
+}
+@media (max-width:560px) {
+    .stepperHolder{
+        width: 100%;
+    }
+}

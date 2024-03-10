@@ -1,0 +1,76 @@
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  position: unset;
+  overflow-x: hidden;
+  height: "100%";
+}
+
+.react-multiple-carousel__inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.react-multiple-carousel__arrow--right,
+.react-multiple-carousel__arrow--left {
+  background-color: #fff;
+  position: absolute;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(8% + 1px);
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(8% + 1px);
+}
+
+.react-multiple-carousel__arrow--right:hover,
+.react-multiple-carousel__arrow--left:hover {
+  background-color: #fff;
+}
+
+@media (max-width: 640px) {
+  .react-multiple-carousel__arrow--right {
+    right: 42%;
+    transform: translateX(50%);
+    bottom: 40px;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: 42%;
+    transform: translateX(-50%);
+    bottom: 40px;
+  }
+}
+@media (min-width: 390px) {
+  .react-multi-carousel-list {
+    display: flex;
+    align-items: center;
+    position: unset;
+    overflow-x: hidden;
+    height: "50%";
+  }
+}
+
+.react-multiple-carousel__arrow::before {
+  color: #000;
+}
+
+.cardTitle {
+  color: #373737;
+  font-family: "Oswald", Sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.react-multi-carousel-item {
+  list-style: none;
+  margin-left: 0;
+  padding: 0 2rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .react-multi-carousel-item {
+    padding: 0;
+  }
+}

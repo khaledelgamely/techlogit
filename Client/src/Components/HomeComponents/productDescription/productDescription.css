@@ -1,0 +1,46 @@
+.product-description {
+    background-image: url("../../../assets/WhatsApp Image 2023-08-26 at 15.24.22.jpg");
+}
+
+.product-description .proDescMainPhoto {
+    height: 90%;
+    width: 100%;
+}
+
+.product-dropdown {
+    width: 48%;
+}
+
+.payNowBtn {
+    width: 50%;
+    display: flex;
+    height: 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(27 117 188 / var(--tw-bg-opacity));
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+/* .payNowBtn::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 93px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    top: -26px;
+    right: 22px;
+    rotate: -43deg;
+    z-index: 2;
+} */

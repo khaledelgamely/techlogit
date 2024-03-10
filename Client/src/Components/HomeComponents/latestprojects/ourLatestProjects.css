@@ -1,0 +1,14 @@
+.project-item img {
+    transition: all 0.4s;
+}
+
+.project-item h1 {
+    font-weight: 600;
+}
+
+.project-item p {
+    color: #9d9d9d;
+}
+.project-item img:hover {
+    transform: scale(1.1);
+}

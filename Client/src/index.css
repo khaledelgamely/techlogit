@@ -1,0 +1,121 @@
+/* Font size for screens with a minimum width of 640px (small screens) */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap");
+* {
+  font-family: "DM Sans", sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scrollbar-thumb: #1b75bc;
+  --scrollbar-track: #f0f0f0;
+}
+/* global effect */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+li {
+  list-style: outside;
+  margin-left: 30px;
+  text-align: left;
+
+}
+
+.mainBtn {
+  @apply xs:py-[7px] md:py-[9px] bg-main-color rounded-[3rem] text-white;
+}
+.payNowBtn {
+  @apply xs:py-[10px] md:py-[9px] ps-2 rounded-full;
+}
+
+.container {
+  @apply w-full max-w-screen-xl mx-auto px-8 sm:px-10 md:px-20;
+}
+
+.pay-btn {
+  @apply bg-main-color text-white xs:mt-2 sm:mt-0 xs:h-10 sm:h-14  xs:w-[80%] md:w-[100%] xl:w-[60%] rounded-3xl xs:text-[15px] md:text-[14px] lg:text-[16px] md:mx-3 xs:mx-auto;
+}
+.pay-btn4 {
+  @apply bg-main-color text-white xs:mt-2 sm:mt-0 xs:h-10 sm:h-14  xs:w-[100%] sm:w-[80%] md:w-[90%]  xl:w-[60%] rounded-3xl xs:text-[15px] md:text-[14px] lg:text-[16px] md:mx-3 xs:mx-auto;
+}
+.pay-btn4edit {
+  @apply bg-main-color text-white xs:mt-2 sm:mt-0 xs:h-10 sm:h-14  xs:w-[100%] sm:w-[80%] md:w-[101%]  xl:w-[62%] rounded-3xl xs:text-[15px] md:text-[13px] lg:text-[16px] md:mx-1 xs:mx-auto;
+}
+.pay-btn2 {
+  @apply bg-main-color text-white xs:h-10 sm:h-14 w-full 
+  rounded-3xl xs:text-[12px] sm:text-[15px] lg:text-[16px] xs:mx-2 flex flex-row items-center justify-center;
+}
+.pay-btn3 {
+  @apply text-main-color border border-main-color xs:h-10 sm:h-14 w-full rounded-3xl xs:text-[12px] sm:text-[15px] lg:text-[16px] xs:mx-2 flex flex-row items-center justify-center;
+}
+
+.readyStatus {
+  @apply bg-[#29BD89] text-white;
+}
+
+.processingStatus {
+  @apply bg-[#F3D55B];
+}
+
+.pendingStatus {
+  @apply bg-[#EE5B5B];
+}
+.refundedStatus {
+  @apply bg-[#4380cf];
+}
+.inputLable {
+  @apply text-[#000000b8] text-[13px];
+}
+.field {
+  @apply w-full text-neutral-900 bg-[#F5F7F9] border-neutral-300 
+    placeholder-[#9d9d9d] rounded-lg focus:outline-none focus:ring focus:border-primary
+    focus:placeholder-neutral-400 my-1 px-4 py-2;
+}
+
+.ContactInput {
+  @apply block rounded-[3px] mt-2   border-[1px] border-gray-600    w-full lg:w-[100%]   px-3.5 py-2 text-gray-900   placeholder:text-gray-400 focus-visible:outline-none   sm:text-sm sm:leading-6  xs:text-[12px] md:text-[14px] lg:text-[16px];
+  background-color: #ffffff8c;
+}
+.PhoneInputInput {
+  @apply w-full text-neutral-900 bg-[#F5F7F9] border-neutral-300 placeholder-[#9d9d9d] rounded-lg focus:outline-none focus:ring focus:border-primary focus:placeholder-neutral-400 my-1 px-4 py-2 pr-10;
+}
+
+.fieldLable {
+  @apply text-black text-base  transition-transform transform-gpu origin-top-left;
+}
+.field {
+  @apply w-full text-neutral-900 bg-[#F5F7F9] border-neutral-300 placeholder-[#9d9d9d] rounded-lg focus:outline-none focus:ring focus:border-primary focus:placeholder-neutral-400 my-1 px-4 py-2;
+}
+.disabled-btn {
+  background-color: #ddeaf5;
+  color: #ffff; /* Adjust color for disabled text */
+  pointer-events: none; /* Disable interaction */
+}
+.disabled-track {
+  pointer-events: none; /* Disable interaction */
+  border-color: #adc9e1;
+  color: #adc9e1;
+}
+.pay-btn,
+.pay-btn2,
+.pay-btn3 {
+  font-weight: 500;
+}
+
+.hidden-scrollbar {
+  -ms-overflow-style: none;  /* per Internet Explorer e Edge */
+  scrollbar-width: none;  /* per Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;  /* per Chrome, Safari e Opera */
+}

@@ -1,0 +1,321 @@
+.textContent {
+  background-image: url("../../assets/HowWork/bg.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 4rem;
+}
+
+.timeline {
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/* cards container */
+.cards {
+  position: relative;
+  flex-direction: row-reverse;
+  display: flex;
+  /* min-height: 477px; */
+  align-items: center;
+  padding: 3.5vw;
+
+}
+
+/* setting padding based on even or odd */
+
+
+/* Global ::before */
+.cards::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid #AAAAAA;
+}
+
+/* Setting the border of top, bottom, left */
+.cards:nth-child(odd)::before {
+  right: 1px;
+  top: -30px;
+  bottom: -4px;
+  border-width: 30px 30px 30px 0px;
+  border-radius: 0 80px 80px 0px;
+  -webkit-border-radius: 0 80px 80px 0px;
+  -moz-border-radius: 0 80px 80px 0px;
+  -ms-border-radius: 0 80px 80px 0px;
+  -o-border-radius: 0 80px 80px 0px;
+}
+
+.cards:first-child::before {
+  top: -10px;
+  bottom: -5px;
+  width: 90%;
+
+}
+
+
+
+
+/* Media query for extra-small (xs) screens */
+@media (max-width: 575px) {
+  .cards:first-child::before {
+    width: 77%;
+  }
+}
+
+/* Media query for medium (md) screens */
+@media (min-width: 576px) and (max-width: 991px) {
+  .cards:first-child::before {
+    width: 86%;
+  }
+
+}
+
+.cards:last-child::after {
+  content: 'END';
+  width: 100px;
+  position: absolute;
+  height: 100px;
+  background-color: #FFF;
+  border: 9.6px solid #AAAAAA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  bottom: -29px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+
+}
+
+/* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+
+
+/* Setting the border of top, bottom, right */
+.cards:nth-child(even)::before {
+  left: 0;
+  top: -25px;
+  bottom: 0px;
+  border-width: 30px 0px 30px 30px;
+  border-radius: 80px 0px 0px 80px;
+  -webkit-border-radius: 80px 0px 0px 80px;
+  -moz-border-radius: 80px 0px 0px 80px;
+  -ms-border-radius: 80px 0px 0px 80px;
+  -o-border-radius: 80px 0px 0px 80px;
+}
+
+.cards:last-child::before {
+  top: -30px;
+  bottom: 10px;
+  width: 93%;
+}
+
+
+
+
+/* Removing the border if it is the 
+
+cards */
+.cards:first-child::after {
+  content: 'START';
+  width: 100px;
+  position: absolute;
+  height: 100px;
+  background-color: #FFF;
+  border: 9.6px solid #AAAAAA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  left: 43px;
+  font-size: 18px;
+  font-weight: bold;
+  top: -42px;
+  -webkit-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+
+
+
+.cards:last-child {
+
+  padding-bottom: 10vh;
+}
+
+/* Media query for extra-small (xs) screens */
+@media (max-width: 575px) {
+  .cards:last-child::before {
+    width: 75%;
+  }
+
+  .cards:first-child::after {
+    content: 'START';
+    width: 80px;
+    position: absolute;
+    height: 80px;
+    background-color: #FFF;
+    border: 9.6px solid #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    left: 43px;
+    font-size: 14px;
+    font-weight: bold;
+    top: -33px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  .cards:last-child::after {
+    content: 'END';
+    width: 80px;
+    position: absolute;
+    height: 80px;
+    background-color: #FFF;
+    border: 9.6px solid #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    left: 47px;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: -19px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+}
+
+/* Media query for medium (md) screens */
+@media (min-width: 576px) and (max-width: 991px) {
+  .cards:last-child::before {
+    width: 83%;
+  }
+}
+
+/* work-information about the timeline */
+.work-info {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* text right if the cards is even  */
+.cards:nth-child(even)>.work-info>.title {
+  text-align: right;
+}
+
+/* setting dot to the left if the cards is odd */
+.cards:nth-child(odd)>.work-info>.title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the cards is odd */
+.cards:nth-child(even)>.work-info>.title::before {
+  right: -45px;
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* Choose your desired color */
+  border-radius: 50%;
+  /* Make it a circle */
+  left: 10px;
+  /* Adjust the left position as needed */
+  /* Add other styling properties as needed */
+}
+
+@media (max-width: 1020px) {
+
+  .cards:nth-child(odd)::before {
+    border-width: 12px 12px 12px 0px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .cards:nth-child(even)::before {
+    border-width: 12px 0px 12px 12px;
+    top: -7.5px;
+    bottom: 18px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+
+  .cards:first-child::before {
+
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    padding: 0;
+  }
+
+  .first-work-info {
+    margin-top: 45px;
+  }
+
+  .cards:last-child {
+    padding-bottom: 5vh;
+  }
+
+  .cards:nth-child(odd)::before {
+    border-width: 12px 12px 12px 0px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .cards:nth-child(even)::before {
+    border-width: 12px 0px 12px 12px;
+    top: -7.5px;
+    bottom: 18px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+
+  .cards:last-child::before {
+    bottom: 17px;
+  }
+
+  .cards:first-child::before {
+    top: -1px;
+  }
+
+  .work-info {
+    /* align-items: normal;
+    justify-content: flex-start;
+    width: 687;
+    height: 656px; */
+  }
+}
